@@ -52,9 +52,9 @@
 			integration testing -->
 		<local.server.root>${project.build.directory}/server</local.server.root>
 		<local.server.host>localhost</local.server.host>
-		<local.server.proxy.settings>--http-proxy-host proxy --http-proxy-port 8080 --https-proxy-host proxy --https-proxy-port 8080</local.server.proxy.settings>
-		<browser.proxy.settings>-Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080</browser.proxy.settings>
-		<sap.cloud.sdk.version>3.20.3.1</sap.cloud.sdk.version>
+		
+
+		<sap.cloud.sdk.version>3.58.10.1</sap.cloud.sdk.version>
 		<sap.cloud.sdk.path>${project.build.directory}/install</sap.cloud.sdk.path>
 		<!-- Property that holds the source path to the backend destinations -->
 		<destinations.path>${basedir}/../destinations</destinations.path>
@@ -124,6 +124,14 @@
 				<version>${javax.servlet-api.version}</version>
 				<scope>compile</scope>
 			</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink -->
+<dependency>
+    <groupId>org.eclipse.persistence</groupId>
+    <artifactId>eclipselink</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
@@ -243,6 +251,11 @@
 					<artifactId>maven-antrun-plugin</artifactId>
 					<version>${maven-antrun-plugin.version}</version>
 				</plugin>
+
+
+
+
+
 
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>

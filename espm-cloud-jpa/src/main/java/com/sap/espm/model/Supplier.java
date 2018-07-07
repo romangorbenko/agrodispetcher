@@ -33,16 +33,13 @@ public class Supplier {
 	@Column(name = "CITY", length = 40)
 	private String city;
 
-	@Column(name = "POSTAL_CODE", length = 10)
-	private String postalCode;
-
 	@Column(name = "STREET", length = 60)
 	private String street;
 
 	@Column(name = "HOUSE_NUMBER", length = 10)
 	private String houseNumber;
 
-	@Column(name = "COUNTRY", length = 3)
+	@Column(length = 3)
 	private String country;
 
 	@Column(name = "SUPPLIER_NAME", length = 80)
@@ -78,14 +75,6 @@ public class Supplier {
 
 	public String getCity() {
 		return city;
-	}
-
-	public void setPostalCode(String param) {
-		this.postalCode = param;
-	}
-
-	public String getPostalCode() {
-		return postalCode;
 	}
 
 	public void setStreet(String param) {
