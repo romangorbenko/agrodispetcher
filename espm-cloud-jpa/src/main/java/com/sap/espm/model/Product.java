@@ -35,6 +35,7 @@ import com.sap.espm.model.util.Utility;
 })
 public class Product {
 
+	 private String id;
 	transient private static Map<String, BigDecimal> prices = null;
 
 	@Id

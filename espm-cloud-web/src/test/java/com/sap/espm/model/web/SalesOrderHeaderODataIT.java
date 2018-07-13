@@ -17,7 +17,7 @@ import com.sap.espm.model.web.util.RequestExecutionHelper;
 import com.sap.espm.model.web.util.StreamHelper;
 
 /**
- * Junits for Sales Order Header Odata services
+ * Junits for Sales Order Header Odata services 1
  * 
  */
 public class SalesOrderHeaderODataIT extends AbstractODataIT {

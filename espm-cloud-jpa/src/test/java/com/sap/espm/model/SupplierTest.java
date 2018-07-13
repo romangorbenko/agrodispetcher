@@ -26,7 +26,8 @@ public class SupplierTest extends AbstractTest {
 
 	/**
 	 * Test if a single Business Partner can be added and checks if it exists
-	 * via entitymanager.find.
+	 * via entitymanager.find.!
+	 * 
 	 */
 	@Test
 	public void testExistingSupplierSearchFind() {
@@ -63,6 +64,7 @@ public class SupplierTest extends AbstractTest {
 	 */
 	@Test
 	public void testExistingSupplierSearchTyped() {
+	
 		Supplier supplierAct = null;
 		String supplierId = "11111";
 		EntityManager em = emf.createEntityManager();
