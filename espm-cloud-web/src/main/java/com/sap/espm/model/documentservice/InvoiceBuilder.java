@@ -117,16 +117,13 @@ public class InvoiceBuilder {
 
 				}
 
-				/**
-				 * start
-				 */
-				
+			
 				// 4. Close the stream
 				contentStream.endText();
 				contentStream.close();
 				ByteArrayOutputStream out = new ByteArrayOutputStream();
 				invoiceDocument.save(out);
-				//invoiceDocument.close();
+				invoiceDocument.close();
 
 				Map<String, Object> properties = new HashMap<String, Object>();
 				properties.put(PropertyIds.OBJECT_TYPE_ID, "cmis:document");
