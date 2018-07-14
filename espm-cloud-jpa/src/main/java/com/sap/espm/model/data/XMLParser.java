@@ -630,7 +630,7 @@ public class XMLParser {
 					if (event.asStartElement().getName().getLocalPart()
 							.equals(BP_POSTAL_CODE)) {
 						event = eventReader.nextEvent();
-						sup.setPostalCode(getEvent(event));
+						//sup.setPostalCode(getEvent(event));
 						continue;
 					}
 					if (event.asStartElement().getName().getLocalPart()

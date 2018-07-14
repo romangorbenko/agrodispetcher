@@ -32,7 +32,7 @@ sap.ui.define([
 		 * @memberOf com.sap.espm.retailer.view.App
 		 */
 			onAfterRendering: function() {
-				if (!this.pressDialog) {
+		/*		if (!this.pressDialog) {
 					this.pressDialog = new Dialog({
 						title: 'Important Information',
 						content: new Text({
@@ -52,7 +52,7 @@ sap.ui.define([
 
 				this.pressDialog.open();
 		
-			},
+			},*/
 
 		/**
 		 * Called when the Controller is destroyed. Use this one to free resources and finalize activities.
@@ -60,7 +60,7 @@ sap.ui.define([
 		 */
 		//	onExit: function() {
 		//
-		//	}
+			}
 
 	});
 
