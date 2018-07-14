@@ -23,6 +23,8 @@ import com.sap.espm.model.util.ReadProperties;
  */
 public final class CMISSessionHelper {
 
+	
+
 	/**
 	 * The {@link Logger} instance used for logging.
 	 */
