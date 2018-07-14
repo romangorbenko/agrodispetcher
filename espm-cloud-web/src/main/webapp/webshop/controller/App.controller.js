@@ -19,7 +19,7 @@ sap.ui.define([
 
 			
 		},
-		onAfterRendering: function() 
+		/*onAfterRendering: function() 
 		{
 		
 			if (!this.pressDialog) {
@@ -42,7 +42,7 @@ sap.ui.define([
 
 			this.pressDialog.open();
 			
-		},
+		},*/
 		onBeforeRendering: function() 
 		{
 		
