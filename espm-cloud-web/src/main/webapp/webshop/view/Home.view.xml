@@ -5,6 +5,10 @@
 					<Button icon="sap-icon://my-sales-order" id="btnOrdersId" press="onOrdersButtonPressed" tooltip="{i18n>home.salesOrder}"/>
 					<Button icon="sap-icon://cart" id="btnProductListHeader" press="onShoppingCartPressed" text="{TotalQunatity}"
 						tooltip="{i18n>home.cart}"/>
+				   	<Button icon="sap-icon://goal" id="btnAbout" press="onAboutButtonPressed" tooltip="About"/>
+				   		
+						
+						
 				</headerContent>
 				<content>
 					<Table selectionMode="MultiToggle" rowSelectionChange="onItemPressed" class="sapUiResponsiveMargin" growing="true" growingScrollToLoad="true" id="catalogTable" noDataText="{i18n>home.noDataProducts}" items="{path: 'EspmModel>/Products', sorter: {path: 'Name', descending: false}}" updateFinished="onUpdateFinished" width="auto" enableBusyIndicator="true">
