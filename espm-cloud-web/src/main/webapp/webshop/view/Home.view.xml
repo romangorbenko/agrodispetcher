@@ -7,14 +7,14 @@
 						tooltip="{i18n>home.cart}"/>
 				   	<Button icon="sap-icon://goal" id="btnAbout" press="onAboutButtonPressed" tooltip="About"/>
 				   		
-						
+						<Button class="sapMTableContentMargin" id="btnAddToCart" press="onAddToCartHomePressed" text="test"/>
 						
 				</headerContent>
 				<content>
 					<Table selectionMode="MultiToggle" rowSelectionChange="onItemPressed" class="sapUiResponsiveMargin" growing="true" growingScrollToLoad="true" id="catalogTable" noDataText="{i18n>home.noDataProducts}" items="{path: 'EspmModel>/Products', sorter: {path: 'Name', descending: false}}" updateFinished="onUpdateFinished" width="auto" enableBusyIndicator="true">
 						<headerToolbar>
 							<OverflowToolbar id="tableToolbar">
-								<Title id="catalogTitle" text="{catalogTitle}" visible="{= !${device>/system/phone}}"/>
+								<Title id="catalogTitle" text="{catalogTitle}" visible="{= !${device>/system/phone}tr}"/>
 								<ToolbarSpacer id="toolbarSpacer" visible="{= !${device>/system/phone}}"/>
 								<ComboBox id="categoryListId" selectionChange="handleSelectionFinish" width="500px" items="{path: 'EspmModel>/ProductCategories'}">
 									<core:Item key="{EspmModel>Category}" text="{EspmModel>Category}" />
